@@ -36,6 +36,8 @@ safe_number:
     move $t3, $t2 #Counter added for the loop
 
     fib_loop:
-        begz
+        li $v0, 1
+        move $a0, $t0
+        syscall
 
     
