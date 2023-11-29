@@ -31,9 +31,9 @@ safe_number:
     syscall
 
     #starts the fib_sequence
-    li $t0, 0
-    li $t1, 1
-    move $t3, $t2 #Counter added for the loop
+    li $t1, 0
+    li $t2, 1
+    move $t3, $t0 #Counter added for the loop
 
     fib_loop:
         li $v0, 1
