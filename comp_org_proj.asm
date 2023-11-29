@@ -37,7 +37,7 @@ safe_number:
 
     fib_loop:
         li $v0, 1
-        move $a0, $t0
+        move $a0, $t1
         syscall
 
         add $t5, $t1, $t2 # this adds the first number with the next number in the Sequence
