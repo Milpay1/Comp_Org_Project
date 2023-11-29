@@ -24,8 +24,14 @@ illegal_number:
     syscall
 
     j main
+
 safe_number:
     li $v0, 4
     la $a0, fib_msg
     syscall
+
+    #starts the fib_sequence
+    li $t0, 0
+    li $t1, 1
+
     
