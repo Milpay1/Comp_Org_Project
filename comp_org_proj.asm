@@ -15,4 +15,12 @@ main:
     syscall
     move $t0, $v0 #gets the number and sets it to t0
 
+    bge $t0, 25, safe_number
+    j illegal_number
+
+illegal_number:
+    li $v0, 4
+    la $a0, error_msg
+    syscall
+
     
