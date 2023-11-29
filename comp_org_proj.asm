@@ -23,4 +23,9 @@ illegal_number:
     la $a0, error_msg
     syscall
 
+    j main
+safe_number:
+    li $v0, 4
+    la $a0, fib_msg
+    syscall
     
