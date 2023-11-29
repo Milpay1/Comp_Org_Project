@@ -33,5 +33,9 @@ safe_number:
     #starts the fib_sequence
     li $t0, 0
     li $t1, 1
+    move $t3, $t2 #Counter added for the loop
+
+    fib_loop:
+        begz
 
     
