@@ -9,3 +9,10 @@ main:
     li $v0, 4
     la $a0, prompt
     syscall
+
+    #Reads the input from the user
+    li $v0, 5
+    syscall
+    move $t0, $v0 #gets the number and sets it to t0
+
+    
