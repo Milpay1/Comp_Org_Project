@@ -43,4 +43,10 @@ safe_number:
         add $t5, $t0, $t1 # this adds the first number with the next number in the Sequence
         move $t0, $t1 #moves to the next number
         move $t1, $t5 #moves the added number to t1
+
+        subi $t3, $t3, 1
+        bnez $t3, fib_loop
+
+        li $v0, 10
+        syscall
     
