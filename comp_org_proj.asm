@@ -40,4 +40,7 @@ safe_number:
         move $a0, $t0
         syscall
 
+        add $t5, $t0, $t1 # this adds the first number with the next number in the Sequence
+        move $t0, $t1 #moves to the next number
+        move $t1, $t5 #moves the added number to t1
     
